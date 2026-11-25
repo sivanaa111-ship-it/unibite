@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\&display=swap"><link rel="stylesheet" href="/css/styles.css">
+<title>Log in · UniBite</title>
+<meta name="description" content="UniBite — Your Campus. Your Cravings. One Click.">
+</head>
+<body>
+<main id="main" class="auth-wrap">
+  <aside class="auth-side"><h2>Your Campus.<br>Your Cravings.<br>One Click.</h2><p id="side-text">Log in to order from every restaurant, café and food truck on campus.</p><span data-icon-xl="utensils"></span></aside>
+  <div class="auth-main"><div class="auth-card">
+    <h1 style="font-size:2rem">Log in</h1>
+    <div class="segmented" role="tablist" aria-label="Account type" style="margin:8px 0 20px;width:100%">
+      <button type="button" role="tab" id="tab-student" data-portal="student" aria-pressed="true" aria-selected="true" style="flex:1">Login as Student</button>
+      <button type="button" role="tab" id="tab-restaurant" data-portal="restaurant" aria-pressed="false" aria-selected="false" style="flex:1">Login as Restaurant</button>
+    </div>
+    <form id="login-form" class="stack" novalidate>
+      <input type="hidden" name="portal" value="student">
+      <div class="field"><label for="email" id="email-label">University email</label><input class="input" id="email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="password">Password</label><input class="input" id="password" name="password" type="password" autocomplete="current-password" required></div>
+      <div class="row" style="justify-content:flex-end;margin-top:4px"><a class="small" href="/forgot-password.html">Forgot password?</a></div>
+      <button class="btn btn-primary btn-block btn-lg" type="submit" data-busy="Logging in…">Log in</button>
+    </form>
+    <div id="after-form"></div>
+    <p class="small" style="margin-top:16px" id="switch-text"></p>
+  </div></div>
+</main>
+<script type="module" src="/js/pages/login.js"></script>
+</body>
+</html>

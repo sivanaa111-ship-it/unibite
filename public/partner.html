@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\&display=swap"><link rel="stylesheet" href="/css/styles.css">
+<title>Register your restaurant · UniBite</title>
+<meta name="description" content="UniBite — Your Campus. Your Cravings. One Click.">
+</head>
+<body>
+<main id="main" class="container" style="max-width:860px">
+  <div class="page-head"><h1 style="font-size:2.25rem">Register your restaurant</h1>
+  <p class="muted">Run a restaurant, café or food truck on campus? Apply to join UniBite. The UniBite team reviews every application. Once you are approved, you will get an email to activate your owner account.</p></div>
+  <form id="partner-form" class="card" novalidate>
+    <section class="form-section" style="border-bottom:1px solid var(--color-border)"><h2>Owner information</h2>
+      <div class="form-grid">
+        <div class="field full"><label for="contact_name">Owner full name <span class="req">*</span></label><input class="input" id="contact_name" name="contact_name" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email address <span class="req">*</span></label><input class="input" id="email" name="email" type="email" autocomplete="email" required><span class="hint">Your owner account will use this email.</span></div>
+        <div class="field"><label for="phone">Phone number <span class="req">*</span></label><input class="input" id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+      </div></section>
+    <section class="form-section"><h2>Restaurant information</h2>
+      <div class="form-grid">
+        <div class="field"><label for="restaurant_name">Restaurant name <span class="req">*</span></label><input class="input" id="restaurant_name" name="restaurant_name" required></div>
+        <div class="field"><label for="category_id">Restaurant category <span class="req">*</span></label><select class="select" id="category_id" name="category_id" required><option value="">Choose…</option></select></div>
+        <div class="field full"><label for="campus_location">Campus location <span class="req">*</span></label><input class="input" id="campus_location" name="campus_location" required placeholder="Where on campus would you operate?"></div>
+        <div class="field full"><label for="description">Restaurant description <span class="req">*</span></label><textarea class="textarea" id="description" name="description" required></textarea></div>
+        <div class="field full"><label for="additional_info">Additional information</label><textarea class="textarea" id="additional_info" name="additional_info" placeholder="Opening hours you plan, experience, special requirements…"></textarea></div>
+      </div></section>
+    <div class="form-actions" style="position:static"><button class="btn btn-primary btn-lg" type="submit" data-busy="Submitting…">Submit application</button></div>
+  </form>
+</main>
+<script type="module" src="/js/pages/partner.js"></script>
+</body>
+</html>

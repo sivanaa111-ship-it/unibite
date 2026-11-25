@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\&display=swap"><link rel="stylesheet" href="/css/styles.css">
+<title>Manage restaurant · UniBite</title>
+</head>
+<body>
+<div class="dash" id="dash">
+  <aside class="dash-side" id="side" aria-label="Restaurant navigation">
+    <a href="/" class="brand" style="padding-bottom:8px"><span class="brand-mark" data-icon-big="utensils"></span><span>Uni<b style="color:#F87171">Bite</b><small>Restaurant manager</small></span></a>
+    <nav id="side-nav">
+      <a href="#overview" data-view="overview"><span data-icon="grid"></span>Overview</a>
+      <div class="dash-nav-label">Orders</div>
+      <a href="#orders" data-view="orders"><span data-icon="receipt"></span>Incoming orders<span class="count hidden" id="pending-count"></span></a>
+      <a href="#history" data-view="history"><span data-icon="history"></span>Previous orders</a>
+      <div class="dash-nav-label">Restaurant</div>
+      <a href="#menu" data-view="menu"><span data-icon="utensils"></span>Menu management</a>
+      <a href="#info" data-view="info"><span data-icon="store"></span>Restaurant information</a>
+      <a href="#performance" data-view="performance"><span data-icon="chart"></span>Ratings &amp; performance</a>
+      <a href="#account" data-view="account"><span data-icon="settings"></span>Account</a>
+    </nav>
+    <div class="side-foot">
+      <a href="#" id="view-public" target="_blank" rel="noopener"><span data-icon="external"></span>View public page</a>
+      <button class="nav-btn" id="logout"><span data-icon="logout"></span>Log out</button>
+    </div>
+  </aside>
+  <div class="dash-main">
+    <header class="dash-top">
+      <button class="icon-btn dash-menu-btn" id="menu-toggle" aria-label="Open navigation" data-icon="menu"></button>
+      <h1 id="page-title">Overview</h1><span class="spacer"></span>
+      <div id="top-right" class="row"></div>
+    </header>
+    <div id="banner"></div>
+    <main class="dash-content" id="main" tabindex="-1"></main>
+  </div>
+</div>
+<script type="module" src="/js/pages/staff.js"></script>
+</body>
+</html>

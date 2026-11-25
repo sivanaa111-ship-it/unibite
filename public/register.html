@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\&display=swap"><link rel="stylesheet" href="/css/styles.css">
+<title>Student sign up · UniBite</title>
+<meta name="description" content="UniBite — Your Campus. Your Cravings. One Click.">
+</head>
+<body>
+<main id="main" class="auth-wrap">
+  <aside class="auth-side"><h2>Hungry between lectures?</h2><p>Create your free student account and order from every outlet on campus.</p><span data-icon-xl="bag"></span></aside>
+  <div class="auth-main"><div class="auth-card" id="register-view">
+    <h1 style="font-size:2rem">Create student account</h1>
+    <p class="muted">Use your official university email and University ID. Restaurant accounts are set up by the UniBite team.</p>
+    <form id="register-form" class="stack" novalidate>
+      <div class="field"><label for="name">Full name <span class="req">*</span></label><input class="input" id="name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="email">University email <span class="req">*</span></label><input class="input" id="email" name="email" type="email" autocomplete="email" required><span class="hint" id="domain-hint"></span></div>
+      <div class="field"><label for="university_id">University ID <span class="req">*</span></label><input class="input" id="university_id" name="university_id" inputmode="numeric" autocomplete="off" required><span class="hint">As printed on your university ID card.</span></div>
+      <div class="field"><label for="password">Password <span class="req">*</span></label><input class="input" id="password" name="password" type="password" autocomplete="new-password" required><span class="hint">At least 8 characters with a letter and a number.</span></div>
+      <div class="field"><label for="confirm_password">Confirm password <span class="req">*</span></label><input class="input" id="confirm_password" name="confirm_password" type="password" autocomplete="new-password" required></div>
+      <button class="btn btn-primary btn-block btn-lg" type="submit" data-busy="Creating account…">Create account</button>
+    </form>
+    <p class="small" style="margin-top:16px">Already have an account? <a href="/login.html">Log in</a></p>
+  </div></div>
+</main>
+<script type="module" src="/js/pages/register.js"></script>
+</body>
+</html>

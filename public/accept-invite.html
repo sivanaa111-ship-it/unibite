@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\&display=swap"><link rel="stylesheet" href="/css/styles.css">
+<title>Activate restaurant account · UniBite</title>
+<meta name="description" content="UniBite — Your Campus. Your Cravings. One Click.">
+</head>
+<body>
+<main id="main" class="auth-main" style="min-height:70vh"><div class="auth-card card card-pad" id="view" style="max-width:480px">
+  <h1 style="font-size:1.75rem">Activate your restaurant account</h1><p class="muted" id="intro">Checking your invitation…</p>
+  <form id="invite-form" class="stack hidden" novalidate>
+    <div class="field" data-new><label for="email-ro">Email</label><input class="input" id="email-ro" disabled></div>
+    <div class="field" data-new><label for="name">Your full name <span class="req">*</span></label><input class="input" id="name" name="name" autocomplete="name"></div>
+    <div class="field"><label for="password" id="pw-label">Create a password <span class="req">*</span></label><input class="input" id="password" name="password" type="password" autocomplete="new-password"><span class="hint" data-new>At least 8 characters with a letter and a number.</span></div>
+    <div class="field" data-new><label for="confirm_password">Confirm password <span class="req">*</span></label><input class="input" id="confirm_password" name="confirm_password" type="password" autocomplete="new-password"></div>
+    <button class="btn btn-primary btn-block btn-lg" type="submit" data-busy="Activating…">Activate account</button>
+  </form>
+</div></main>
+<script type="module" src="/js/pages/accept-invite.js"></script>
+</body>
+</html>

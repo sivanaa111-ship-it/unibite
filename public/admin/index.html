@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\&display=swap"><link rel="stylesheet" href="/css/styles.css">
+<title>Admin · UniBite</title>
+<meta name="robots" content="noindex">
+</head>
+<body>
+<div class="dash" id="dash">
+  <aside class="dash-side" aria-label="Admin navigation">
+    <a href="/admin/" class="brand"><span class="brand-mark" data-icon-big="utensils"></span><span>Uni<b style="color:#F87171">Bite</b><small>Super Admin</small></span></a>
+    <nav id="side-nav">
+      <a href="#overview" data-view="overview"><span data-icon="grid"></span>Overview</a>
+      <div class="dash-nav-label">Restaurants</div>
+      <a href="#restaurants" data-view="restaurants"><span data-icon="store"></span>Manage Restaurants</a>
+      <a href="#restaurants/new" data-view="new"><span data-icon="plusCircle"></span>Add Restaurant</a>
+      <a href="#requests" data-view="requests"><span data-icon="inbox"></span>Restaurant Requests<span class="count hidden" id="req-count"></span></a>
+      <a href="#categories" data-view="categories"><span data-icon="tag"></span>Categories</a>
+      <div class="dash-nav-label">Accounts</div>
+      <a href="#accounts" data-view="accounts"><span data-icon="key"></span>Restaurant Accounts</a>
+      <a href="#students" data-view="students"><span data-icon="users"></span>Students</a>
+      <div class="dash-nav-label">Security</div>
+      <a href="#audit" data-view="audit"><span data-icon="history"></span>Audit Log</a>
+      <a href="#security" data-view="security"><span data-icon="shield"></span>Admin Security</a>
+    </nav>
+    <div class="side-foot">
+      <a href="/" target="_blank" rel="noopener"><span data-icon="external"></span>View public site</a>
+      <button class="nav-btn" id="logout"><span data-icon="logout"></span>Logout</button>
+    </div>
+  </aside>
+  <div class="dash-main">
+    <header class="dash-top">
+      <button class="icon-btn dash-menu-btn" id="menu-toggle" aria-label="Open navigation" data-icon="menu"></button>
+      <h1 id="page-title">Overview</h1><span class="spacer"></span>
+      <a href="#restaurants/new" class="btn btn-primary btn-sm hide-mobile" id="top-add"><span data-icon="plus"></span>Add Restaurant</a>
+      <div class="user-menu" id="notif">
+        <button class="icon-btn cart-btn" id="notif-btn" aria-haspopup="true" aria-expanded="false" aria-label="Notifications"><span data-icon="bell"></span><span class="cart-count hidden" id="notif-count"></span></button>
+        <div class="user-menu-panel" id="notif-panel" style="width:340px;max-width:calc(100vw - 32px)" role="region" aria-label="Notifications"></div>
+      </div>
+      <div id="top-user" class="row"></div>
+    </header>
+    <main class="dash-content" id="main" tabindex="-1"></main>
+  </div>
+</div>
+<script type="module" src="/js/admin/main.js"></script>
+</body>
+</html>

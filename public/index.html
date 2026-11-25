@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\&display=swap"><link rel="stylesheet" href="/css/styles.css">
+<title>UniBite — Your Campus. Your Cravings. One Click.</title>
+<meta name="description" content="UniBite — order from campus restaurants, cafés and food trucks.">
+</head>
+<body>
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge badge-accent plain">Every campus outlet, one app</span>
+        <h1 style="margin-top:16px">Your Campus.<br>Your Cravings.<br><span>One Click.</span></h1>
+        <p class="lead">Browse menus from restaurants, cafés and food trucks across campus, order ahead, and pick up the moment it is ready.</p>
+        <form class="hero-search" action="/restaurants.html" role="search">
+          <label for="hero-q" class="sr-only">Search restaurants</label>
+          <input id="hero-q" name="q" class="input" placeholder="Search restaurants, cafés or locations">
+          <button class="btn btn-primary" type="submit" data-icon="search">Search</button>
+        </form>
+        <div class="stat-strip" id="stats" aria-live="polite"></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-blob"></div>
+        <div class="hero-big-icon" data-icon-big="chef"></div>
+        <div class="hero-tile" style="top:8%;left:-4%"><span class="tile-icon tint-green" data-icon="check"></span><span>Order ready<small>Pickup code 4821</small></span></div>
+        <div class="hero-tile" style="bottom:10%;right:-2%"><span class="tile-icon tint-amber" data-icon="clock"></span><span>~10 min<small>Average prep time</small></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head"><div><h2>Browse by category</h2><p>Find exactly what you are craving.</p></div></div>
+      <div class="cat-grid" id="categories"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div><h2>Popular on campus</h2><p>Top-rated spots students love.</p></div>
+        <a href="/restaurants.html" class="btn btn-secondary">View all restaurants <span data-icon="arrowRight"></span></a></div>
+      <div class="r-grid" id="featured"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div><h2>How UniBite works</h2><p>Three steps between you and lunch.</p></div></div>
+      <div class="steps">
+        <div class="card step"><div class="step-num" style="background:#DC2626">1</div><h3>Pick a spot</h3><p class="muted">See live opening status, menus and ratings for every outlet on campus.</p></div>
+        <div class="card step"><div class="step-num" style="background:#EA580C">2</div><h3>Order ahead</h3><p class="muted">Add items to your cart and place your order in a few taps, no queue.</p></div>
+        <div class="card step"><div class="step-num" style="background:#15803D">3</div><h3>Track &amp; pick up</h3><p class="muted">Follow your order in real time and show your pickup code at the counter.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <div><h2>Run a food outlet on campus?</h2><p style="margin:0">Join UniBite to reach thousands of students and manage orders from one dashboard.</p></div>
+        <a class="btn btn-primary btn-lg" href="/partner.html">Register your restaurant</a>
+      </div>
+    </div>
+  </section>
+</main>
+<script type="module" src="/js/pages/home.js"></script>
+</body>
+</html>

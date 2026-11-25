@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\&display=swap"><link rel="stylesheet" href="/css/styles.css">
+<title>Dev mailbox · UniBite</title>
+<meta name="description" content="UniBite — Your Campus. Your Cravings. One Click.">
+</head>
+<body>
+<main id="main" class="container" style="max-width:900px">
+  <div class="page-head"><h1 style="font-size:2rem">Development mailbox</h1>
+  <div class="notice notice-warning">This page only exists in development, while SMTP is not configured. It shows emails UniBite would have sent, such as verification links, invitations and password resets. It is disabled in production.</div></div>
+  <form class="filters" id="mb-filter"><div class="input-icon" style="flex:1"><span data-icon="search"></span><label for="to" class="sr-only">Recipient</label><input class="input" id="to" name="to" placeholder="Filter by recipient email"></div><button class="btn btn-secondary">Filter</button></form>
+  <div id="list" class="stack"></div>
+</main>
+<script type="module" src="/js/pages/mailbox.js"></script>
+</body>
+</html>
